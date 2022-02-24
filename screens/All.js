@@ -26,6 +26,15 @@ export default function AllScreen(){
                     renderItem={({ item }) => (
                         <View>
                            <View style={styles.newsContainer}>
+                                <Image
+                                    width={550}
+                                    height={250}
+                                    resizeMode={"cover"}
+                                    source={{
+                                        uri: item.urlToImage,
+                                    }}
+                                    alt="Alternate Text"
+                                />
                                 <Text style={styles.title}>
                                     {item.title}
                                 </Text>
